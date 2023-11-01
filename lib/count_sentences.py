@@ -27,7 +27,7 @@ class MyString:
   
   def count_sentences(self):
     if len(self.value):
-      sentences = re.split('[?!.]\s', self.value)
+      sentences = re.split('[?!.][ ]', self.value)
       return len(sentences)
     return 0
     
